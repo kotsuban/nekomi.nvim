@@ -70,7 +70,7 @@ M.options = {
   highlights = function(self)
     -- Reference: https://github.com/catppuccin/nvim/tree/main/lua/catppuccin/groups.
     return {
-      -- Editor
+      -- Editor.
       ColorColumn = { bg = self.colors.surface0 },                                                                    -- used for the columns set with 'colorcolumn'
       Conceal = { fg = self.colors.overlay1 },                                                                        -- placeholder characters substituted for concealed text (see 'conceallevel')
       Cursor = { fg = self.colors.base, bg = self.colors.rosewater },                                                 -- character under the cursor
@@ -141,7 +141,7 @@ M.options = {
       WinBarNC = { link = "WinBar" },
       WinSeparator = { fg = self.colors.base },
 
-      -- Syntax
+      -- Syntax.
       Comment = { fg = self.colors.overlay2 },      -- just comments
       SpecialComment = { link = "Special" },        -- special things inside a comment
       Constant = { fg = self.colors.text },         -- (preferred) any constant
@@ -211,7 +211,7 @@ M.options = {
       DiffChange = { bg = darken(self.colors.blue, 0.07, self.colors.base) }, -- diff mode: Changed line |diff.txt|
       DiffDelete = { bg = darken(self.colors.red, 0.18, self.colors.base) },  -- diff mode: Deleted line |diff.txt|
       DiffText = { bg = darken(self.colors.blue, 0.30, self.colors.base) },   -- diff mode: Changed text within a changed line |diff.txt|
-      -- NeoVim
+      -- neovim
       healthError = { fg = self.colors.red },
       healthSuccess = { fg = self.colors.teal },
       healthWarning = { fg = self.colors.yellow },
@@ -257,7 +257,7 @@ M.options = {
       markdownH5 = { link = "rainbow5" },
       markdownH6 = { link = "rainbow6" },
 
-      -- Lsp
+      -- Lsp.
       LspReferenceText = { bg = self.colors.surface1 },  -- used for highlighting "text" references
       LspReferenceRead = { bg = self.colors.surface1 },  -- used for highlighting "read" references
       LspReferenceWrite = { bg = self.colors.surface1 }, -- used for highlighting "write" references
@@ -316,7 +316,7 @@ M.options = {
       LspInlayHint = { fg = self.colors.overlay0, bg = darken(self.colors.surface0, 0.64, self.colors.base) }, -- virtual text of the inlay hints
       LspInfoBorder = { link = "FloatBorder" },                                                                -- LspInfo border
 
-      -- Terminal
+      -- Terminal.
       terminal_color_0 = { fg = self.colors.overlay0 },
       terminal_color_8 = { fg = self.colors.overlay1 },
 
@@ -341,7 +341,7 @@ M.options = {
       terminal_color_7 = { fg = self.colors.text },
       terminal_color_15 = { fg = self.colors.text },
 
-      -- Treesitter
+      -- Treesitter.
       ["@variable"] = { fg = self.colors.text },           -- Any variable name that does not have another highlight.
       ["@variable.builtin"] = { fg = self.colors.text },   -- Variable names that are defined by the languages, like this or self.
       ["@variable.parameter"] = { fg = self.colors.text }, -- For parameters of a function.
