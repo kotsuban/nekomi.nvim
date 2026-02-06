@@ -1,5 +1,7 @@
 local M = {}
 
+-- Reference: https://github.com/catppuccin/nvim/blob/main/lua/catppuccin/utils/colors.lua.
+
 ---@param hex_str string hexadecimal value of a color
 local hex_to_rgb = function(hex_str)
   local hex = "[abcdef0-9][abcdef0-9]"
@@ -66,7 +68,7 @@ M.options = {
   colors = M.colors,
   integrations = {},
   highlights = function(self)
-    -- Reference to default values: https://github.com/catppuccin/nvim/tree/main/lua/catppuccin/groups
+    -- Reference: https://github.com/catppuccin/nvim/tree/main/lua/catppuccin/groups.
     return {
       -- Editor
       ColorColumn = { bg = self.colors.surface0 },                                                                    -- used for the columns set with 'colorcolumn'
