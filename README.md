@@ -2,11 +2,9 @@
     Nekomi for Neovim
 </h1>
 
-![nekomi-preview](https://imgur.com/NjOChr5.png)
+![nekomi-preview](https://imgur.com/if39V8m.png)
 
-You can think of this theme as a minimal version of catppuccin-mocha. 
-It uses a single accent color for language statements and a small set of additional colors for comments, types, and strings.
-Everything else is rendered as plain white text.
+Minimal neovim theme based on the [Catppuccin](https://github.com/catppuccin/nvim) Mocha.
 
 # Installation #
 
@@ -33,6 +31,11 @@ nekomi.setup({
     colors = { -- Override base and mantle colors. 
       base = "#11111b",
       mantle = "#11111b",
+    },
+    integrations = { -- Disable all integrations, check lua/nekomi.lua for all available integrations.
+      gitsigns = false,
+      mason = false,
+      fugitive = false,
     },
     highlights = function(self)
       return { -- Change the string color to grey.
