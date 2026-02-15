@@ -68,6 +68,7 @@ M.options = {
   colors = M.colors,
   integrations = {
     gitsigns = true,
+    mason = true,
   },
   highlights = function(self)
     -- Reference: https://github.com/catppuccin/nvim/tree/main/lua/catppuccin/groups.
@@ -555,6 +556,23 @@ M.options = {
       hl.GitSignsAddInline = { bg = darken(self.colors.green, 0.36, self.colors.base) }
       hl.GitSignsChangeInline = { bg = darken(self.colors.blue, 0.14, self.colors.base) }
       hl.GitSignsDeleteInline = { bg = darken(self.colors.red, 0.36, self.colors.base) }
+    end
+
+    if self.integrations.mason then
+      hl.MasonHeader = { fg = self.colors.base, bg = self.accent, bold = true }
+      hl.MasonHeaderSecondary = { fg = self.colors.base, bg = self.accent, bold = true }
+      hl.MasonHighlight = { fg = self.accent }
+      hl.MasonHighlightBlock = { bg = self.accent, fg = self.colors.base }
+      hl.MasonHighlightBlockBold = { bg = self.accent, fg = self.colors.base, bold = true }
+      hl.MasonHighlightSecondary = { fg = self.accent }
+      hl.MasonHighlightBlockSecondary = { fg = self.colors.base, bg = self.accent }
+      hl.MasonHighlightBlockBoldSecondary = { fg = self.colors.base, bg = self.accent, bold = true }
+      hl.MasonMuted = { fg = self.colors.overlay0 }
+      hl.MasonMutedBlock = { bg = self.colors.overlay0, fg = self.colors.base }
+      hl.MasonMutedBlockBold = { bg = self.colors.yellow, fg = self.colors.base, bold = true }
+      hl.MasonError = { fg = self.colors.red }
+      hl.MasonHeading = { fg = self.accent, bold = true }
+    end
     end
 
     return hl
