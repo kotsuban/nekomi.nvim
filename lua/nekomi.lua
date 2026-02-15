@@ -69,6 +69,7 @@ M.options = {
   integrations = {
     gitsigns = true,
     mason = true,
+    fugitive = true,
   },
   highlights = function(self)
     -- Reference: https://github.com/catppuccin/nvim/tree/main/lua/catppuccin/groups.
@@ -573,6 +574,10 @@ M.options = {
       hl.MasonError = { fg = self.colors.red }
       hl.MasonHeading = { fg = self.accent, bold = true }
     end
+
+    if self.integrations.fugitive then
+      hl.fugitiveHash = { fg = self.accent }
+      hl.fugitiveStagedModifier = { fg = self.accent }
     end
 
     return hl
