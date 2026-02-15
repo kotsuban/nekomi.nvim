@@ -147,7 +147,7 @@ M.options = {
       Constant = { fg = self.colors.text },         -- (preferred) any constant
       String = { fg = self.colors.green },          -- a string constant: "this is a string"
       Character = { fg = self.colors.text },        --  a character constant: 'c', '\n'
-      Number = { fg = self.colors.text },           --   a number constant: 234, 0xff
+      Number = { fg = self.accent },                --   a number constant: 234, 0xff
       Float = { link = "Number" },                  --    a floating point constant: 2.3e10
       Boolean = { fg = self.accent },               --  a boolean constant: TRUE, false
       Identifier = { fg = self.colors.text },       -- (preferred) any variable name
