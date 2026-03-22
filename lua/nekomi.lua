@@ -184,8 +184,8 @@ M.options = {
       Bold = { bold = true },
       Italic = { italic = true },
 
-      Error = { fg = self.colors.red },              -- (preferred) any erroneous construct
-      Todo = { fg = self.colors.base, bold = true }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+      Error = { fg = self.colors.red },                  -- (preferred) any erroneous construct
+      Todo = { fg = self.colors.overlay2, bold = true }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
       qfLineNr = { fg = self.colors.yellow },
       qfFileName = { fg = self.colors.blue },
       htmlH1 = { fg = self.colors.pink, bold = true },
